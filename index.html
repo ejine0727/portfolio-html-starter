@@ -1,96 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="/_vercel/insights/script.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
-    />
-    <title>Vercel HTML Starter</title>
-    <meta
-      name="description"
-      content="High-performance HTML based website template."
-    />
-  </head>
-  <body>
-    <h1>Vercel HTML Starter</h1>
-    <p>
-      This template is a simple, but powerful single
-      <code>index.html</code> file deployed to
-      <a href="https://vercel.com">Vercel</a>. When your site is deployed, all
-      static assets (like HTML, JavaScript, CSS, images, and more) are deployed
-      globally to every
-      <a href="https://vercel.com/docs/concepts/edge-network/overview"
-        >Vercel Edge Network</a
-      >
-      region.
-    </p>
-    <h2>Simple, privacy-friendly analytics</h2>
-    <p>
-      Want to understand your visitor traffic? Vercel Analytics gives you
-      first-party, privacy-friendly traffic analytics for your HTML site. This
-      template is already configured using the following script:
-    </p>
-    <pre><code>&lt;script defer src="/_vercel/insights/script.js"&gt;&lt;/script&gt;</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/analytics">Vercel Analytics</a>.
-    </p>
-    <h2>Integrated with git</h2>
-    <p>
-      Deploying updates to your site is as simple as
-      <code>git push</code> thanks to Vercel's advanced
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-      Support for GitHub, GitLab, Bitbucket is zero-configuration, and with the
-      flexible Vercel CLI and API, you can integrate with any tool possible.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-    </p>
-    <h2>Fast <code>gzip</code> compression</h2>
-    <p>
-      To help ensure the smallest possible file sizes for your static assets,
-      the Vercel Edge Network compresses files by default using
-      <code>gzip</code>. You can also optionally use
-      <code>brotli</code> compressesion if you prefer.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/edge-network/compression"
-        >compression</a
-      >.
-    </p>
-    <h2>Advanced routing configuration</h2>
-    <p>
-      Vercel gives you a variety of ways to configure the routing of your
-      website. For example, adding redirects, rewrites, or headers to your page.
-      While you can use <code>vercel.json</code> to define these through JSON,
-      you can also express your routing configuration as code using
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-    <p>
-      Middleware runs before the
-      <a href="https://vercel.com/docs/concepts/edge-network/caching"
-        >Vercel Edge Network Cache</a
-      >, so you can configure routing exactly as your application needs. For
-      example, this template uses <code>middleware.js</code> defined in the root
-      of the repository to add additional security headers to the site:
-    </p>
-    <pre><code>referrer-policy: origin-when-cross-origin
-strict-transport-security: max-age=31536000; includeSubDomains; preload
-x-content-type-options: nosniff
-x-dns-prefetch-control: on
-x-frame-options: DENY</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejine Mangcobihon | Portfolio</title>
+    <link rel="icon" type="image/png" href="images/student.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <nav class="navbar">
+        <h2 class="logo">Ejine Portfolio</h2>
+
+        <!-- Mobile Menu Toggle -->
+        <div class="mobile-menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-text">
+                <h1>Hello, I'm <span>Ejine Mangcobihon</span></h1>
+                <p>Student | Designer | Aspiring Educator</p>
+                <p>College of Information Technology and Computing</p>
+                <p>University of Science and Technology of Southern Philippines</p>
+                <p>Bachelor of Science in Information Technology</p>
+                <br>
+                <!-- Checkbox (Hidden) -->
+                <input type="checkbox" id="toggleAbout" class="toggle-checkbox">
+                <!-- About Me Button -->
+                <label for="toggleAbout" class="btn">Description</label>
+                <!-- About Me Section -->
+                <div class="about-me">
+                    <p></p>
+                    <p>
+                        I'm Ejine Mangcobihon, a passionate Bachelor of Science in Information Technology student pursuing a career in design, technology, and education. 
+                        With a love for creative problem-solving, I aim to bridge design and computing to create impactful solutions.
+                        Currently studying at the University of Science and Technology of Southern Philippines.
+                    </p>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/Jine17" class="social-icon" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://github.com/ejine0727" class="social-icon" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/_jinmn/" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="blob"></div>  <!-- Abstract Shape -->
+                <img src="images/pfp.jpeg" alt="Profile Picture">
+            </div>
+        </section>
+
+        <!-- Expanded About Section -->
+        <section id="about" class="about-section">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Educational Journey</h3>
+                    <p>Currently pursuing a degree in Information Technology at the University of Science and Technology of Southern Philippines, I am passionate about bridging technology and creative solutions. My academic journey has been driven by a curiosity to understand how technology can transform learning and communication.</p>
+                    
+                    <h3>Professional Aspiration</h3>
+                    <p>My goal is to become an innovative educator and technologist who can leverage design thinking and digital tools to create impactful learning experiences. I'm particularly interested in educational technology, user experience design, and creating accessible digital solutions that empower learners.</p>
+                    
+                    <h3>Core Values</h3>
+                    <ul class="values-list">
+                        <li><i class="fas fa-arrow-right"></i> Continuous Learning</li>
+                        <li><i class="fas fa-arrow-right"></i> Creative Problem-Solving</li>
+                        <li><i class="fas fa-arrow-right"></i> Inclusive Design</li>
+                        <li><i class="fas fa-arrow-right"></i> Technological Innovation</li>
+                    </ul>
+                </div>
+                <div class="about-timeline">
+                    <h3>Academic Milestones</h3>
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>Bachelor of Science in Information Technology</h4>
+                            <p>University of Science and Technology of Southern Philippines</p>
+                            <span class="timeline-date">Expected Graduation: 2025</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>Academic Excellence Award</h4>
+                            <p>College of Information Technology and Computing</p>
+                            <span class="timeline-date">2023</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>Web Development Certification</h4>
+                            <p>Online Junior Developer</p>
+                            <span class="timeline-date">2022</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>Graphic Design</h3>
+                    <p>Creative visual communication and design solutions</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Front-end and responsive web design</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <h3>Educational Technology</h3>
+                    <p>Innovative learning and teaching strategies</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <h2>Get In Touch</h2>
+            <div class="contact-container">
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <h3>Contact Details</h3>
+                    <p><i class="fas fa-envelope"></i> ejinemangcobihon0727@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +63 946-112-4282</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Villanueva, Misamis Oriental, Philippines</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Ejine Mangcobihon. All Rights Reserved.</p>
+    </footer>
+<script src="floating-dots.js"></script>
+<script>
+    // Mobile Menu Toggle
+    document.addEventListener('DOMContentLoaded', () => {
+        const menuToggle = document.querySelector('.mobile-menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+
+        // Close menu when a link is clicked
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                menuToggle.classList.remove('active');
+            });
+        });
+    });
+</script>
+</body>
 </html>
